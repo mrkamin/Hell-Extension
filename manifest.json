@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Profile Analyzer",
+    "version": "1.0",
+    "description": "Analyze LinkedIn profiles and get recommendations.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.linkedin.com/in/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/ext-icon.png",
+        "48": "images/ext-icon.png",
+        "128": "images/ext-icon.png"
+      }
+    }
+  }
+  
