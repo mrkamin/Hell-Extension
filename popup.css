@@ -1,12 +1,11 @@
-
         body {
             font-family: Arial, sans-serif;
             margin: 10px;
-            width: 20rem;
+            width: 30rem;
         }
         #profile-info {
             margin-top: 10px;
-            width: 20rem;
+            width: 100%;
         }
         img {
             max-width: 100%;
