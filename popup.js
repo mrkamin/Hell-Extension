@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
             // Populate the profile information
             document.getElementById('name').innerText = response.name;
             document.getElementById('headline').innerText = response.headline;
+            document.getElementById('about').innerText = response.about;
+            document.getElementById('experience').innerText =response.experience;
 
             // Populate the profile picture and cover photo
             const profilePicture = document.getElementById('profilePicture');
