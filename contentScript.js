@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     const profileData = {
         name: document.querySelector('.text-heading-xlarge')?.innerText || 'N/A',
         headline: document.querySelector('.text-body-medium')?.innerText || 'N/A',
-        profilePicture: document.querySelector('.profile-photo-edit__preview')?.src || 'N/A',
+        profilePicture: document.querySelector('.profile-photo-edit__preview, .pv-top-card-profile-picture__image--show')?.src || 'N/A',
         coverPhoto: document.querySelector('#profile-background-image-target-image')?.src || 'N/A',
     
     };
