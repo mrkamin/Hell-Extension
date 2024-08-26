@@ -8,7 +8,6 @@ window.addEventListener('load', () => {
         coverPhoto: document.querySelector('#profile-background-image-target-image')?.src || 'N/A',
     
     };
-   console.log('console',profileData.profilePicture, profileData.coverPhoto)
 
     // // Log the extracted data to the console for debugging
    
