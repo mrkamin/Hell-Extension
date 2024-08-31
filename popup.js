@@ -6,7 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('name').innerText = response.name;
             document.getElementById('headline').innerText = response.headline;
             document.getElementById('about').innerText = response.about;
-            document.getElementById('experience').innerText =response.experience;
+            document.getElementById('topSkills').innerText = response.topSkills;
+            document.getElementById('f-e-t').innerText = response.experienceTitle;
+            document.getElementById('f-e-c').innerText = response.experienceCompany;
+            document.getElementById('f-e-d').innerText = response.experienceDescription;
+            
+        
 
             // Populate the profile picture and cover photo
             const profilePicture = document.getElementById('profilePicture');

@@ -6,12 +6,16 @@ window.addEventListener('load', () => {
         headline: document.querySelector('.text-body-medium')?.innerText || 'N/A',
         profilePicture: document.querySelector('.profile-photo-edit__preview, .pv-top-card-profile-picture__image--show')?.src || 'N/A',
         coverPhoto: document.querySelector('#profile-background-image-target-image')?.src || 'N/A',
-        about: document.querySelector('#profile-content > div > div.scaffold-layout.scaffold-layout--breakpoint-xl.scaffold-layout--main-aside.scaffold-layout--reflow.pv-profile.pvs-loader-wrapper__shimmer--animate > div > div > main > section:nth-child(5) > div.display-flex.ph5.pv3 > div > div > div > span.visually-hidden')?.innerText || 'N/A',
-        experience: document.querySelector('#profile-content > div > div.scaffold-layout.scaffold-layout--breakpoint-xl.scaffold-layout--main-aside.scaffold-layout--reflow.pv-profile.pvs-loader-wrapper__shimmer--animate > div > div > main > section:nth-child(8) > div.yvEFPdwDiKnTbJSIrgbbbxROfRuFXGFnts > ul > li:nth-child(1) > div > div.display-flex.flex-column.full-width.align-self-center > div.yvEFPdwDiKnTbJSIrgbbbxROfRuFXGFnts.pvs-entity__sub-components > ul > li:nth-child(1) > div > ul > li > div > div > div > div > span.visually-hidden')?.innerText || 'N/A',
+        about: document.querySelector('div.display-flex.ph5.pv3 > div > div > div > span:nth-child(1)')?.innerText || 'N/A',
+        topSkills: document.querySelector('div:nth-child(4) > div > ul > li > div > div > div.display-flex.flex-column.full-width.align-self-center > div > div.display-flex.flex-column.full-width > div:nth-child(2) > div > div > span:nth-child(1)')?.innerText || 'N/A',
+        experienceTitle: document.querySelector('div.LDoSQiCJWinZRtzJNuiBVttBEmEsiuoLuAQhtg > ul > li:nth-child(1) > div > div.display-flex.flex-column.full-width.align-self-center > div.display-flex.flex-row.justify-space-between > div > div > div > div > div > span:nth-child(1)')?.innerText || 'N/A',
+        experienceCompany: document.querySelector('div.LDoSQiCJWinZRtzJNuiBVttBEmEsiuoLuAQhtg > ul > li:nth-child(1) > div > div.display-flex.flex-column.full-width.align-self-center > div.display-flex.flex-row.justify-space-between > div > span:nth-child(2) > span:nth-child(1)')?.innerText || 'N/A',
+        experienceDescription: document.querySelector('div.LDoSQiCJWinZRtzJNuiBVttBEmEsiuoLuAQhtg > ul > li:nth-child(1) > div > div.display-flex.flex-column.full-width.align-self-center > div.LDoSQiCJWinZRtzJNuiBVttBEmEsiuoLuAQhtg.pvs-entity__sub-components > ul > li:nth-child(1) > div > ul > li > div > div > div > div > span:nth-child(1)')?.innerText || 'N/A',
     };
-
-    // // Log the extracted data to the console for debugging
-   
+    console.log('3',profileData.experience)
+    
+    // Log the extracted data to the console for debugging
+  
 
     // Only send the message if data was found
     if (profileData.name !== 'N/A' || profileData.headline !== 'N/A' ||
@@ -21,5 +25,4 @@ window.addEventListener('load', () => {
     } else {
         console.error('Could not find the required profile data elements.');
     }
-    
 });
