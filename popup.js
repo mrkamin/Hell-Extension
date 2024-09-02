@@ -10,8 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('f-e-t').innerText = response.experienceTitle;
             document.getElementById('f-e-c').innerText = response.experienceCompany;
             document.getElementById('f-e-d').innerText = response.experienceDescription;
-            
-        
+            document.getElementById('b-f-e-t').innerText = response.bexperienceTitle;
+            document.getElementById('b-f-e-c').innerText = response.bexperienceCompany;
+            document.getElementById('b-f-e-d').innerText = response.bexperienceDescription;
+            document.getElementById('o-f-e-t').innerText = response.oexperienceTitle;
+            document.getElementById('o-f-e-c').innerText = response.oexperienceCompany;
+            document.getElementById('o-f-e-d').innerText = response.oexperienceDescription;
 
             // Populate the profile picture and cover photo
             const profilePicture = document.getElementById('profilePicture');
