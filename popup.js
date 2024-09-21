@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     // Request the profile data from the background script
     chrome.runtime.sendMessage({ type: 'getProfileData' }, function(response) {
@@ -40,3 +41,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
