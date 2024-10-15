@@ -1,11 +1,40 @@
 {
-    "manifest_version": 3,
-    "name": "Hello Extensions",
-    "description": "Base Level Extension",
-    "version": "1.0",
+
+    "name": "My YT Bookmarks",
+    "version": "0.1.0",
+    "description": "Saving timetamps in YT videos",
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["https://*.youtube.com/*"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "js": ["contentScripts.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "images/bookmark.png",
+                "images/play.png",
+                "images/delete.png",
+                "images/assests.png"
+
+            ],
+            "matches": ["https://*.youtube.com/*"]
+        }
+    ],
     "action": {
-      "default_popup": "hello.html",
-      "default_icon": "hello_extensions.png"
-    }
-  }
+        "default_icon": {
+            "16": "images/ext-icon.png",
+            "24": "images/ext-icon.png",
+            "32": "images/ext-icon.png"
+        },
+        "default_title": "My YT Bookmarks",
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+}
 
